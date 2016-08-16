@@ -15,8 +15,14 @@ var button = document.getElementById('side'),
 		item[listNum].className="circle1";
 		picture[listNum].style.zIndex = "1";
 		picture[lastNum].style.zIndex = "auto";
-		picture[lastNum].className="pic_leave";
-		picture[listNum].className="pic_show";
+		if(lastNum<listNum){
+			picture[lastNum].className="pic_leave";
+			picture[listNum].className="pic_show";
+		}
+		else if(lastNum>listNum){
+			picture[lastNum].className="pic_leave1";
+			picture[listNum].className="pic_show1";
+		}
 		lastNum = listNum;
 		button.style.backgroundColor="transparent";
 });

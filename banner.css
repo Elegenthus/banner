@@ -54,6 +54,44 @@ div{
 	from {top:0px;}
 	to {top:-100%;}
 }
+.pic_show1{
+	width: 100%;
+	height: 100%;
+	margin:0px;
+	-webkit-animation: pic_show1 1s ease-in-out;
+	animation: pic_show1 1s ease-in-out;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes pic_show1
+{
+	from {top:-100%;}
+	to {top:0px;}
+}
+@-webkit-keyframes pic_show1 /*Safari and Chrome*/
+{
+	from {top:-100%;}
+	to {top:0px;}
+}
+.pic_leave1{
+	width: 100%;
+	height: 100%;
+	margin:0px;
+	-webkit-animation: pic_leave1 1s ease-in-out;
+	animation: pic_leave1 1s ease-in-out;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes pic_leave1
+{
+	from {top:0px;}
+	to {top:100%;}
+}
+@-webkit-keyframes pic_leave1 /*Safari and Chrome*/
+{
+	from {top:0px;}
+	to {top:100%;}
+}
 .circle1{
 	margin-bottom: 10px;
 	width: 12px;
