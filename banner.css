@@ -8,10 +8,14 @@ body
 	left: 20px;
 	top:50%;
 	margin-top: -40px;
+	z-index: 2;
 }
 div{
 	margin-top: 0px;
 	margin-bottom: 0px;
+}
+.picture{
+	opacity: 0;
 }
 .circle{
 	margin-bottom: 10px;
@@ -19,6 +23,7 @@ div{
 	height: 10px;
 	border-radius: 6px;
 	border: 1px #6291b4 solid;
+	cursor: pointer;
 }
 .transparent{
 	margin-bottom: 10px;
@@ -31,24 +36,24 @@ div{
 }
 @keyframes pic_show
 {
-	from {top:0px;}
-	to {top:100%;}
+	from {top:100%;}
+	to {top:0px;}
 }
 @-webkit-keyframes pic_show /*Safari and Chrome*/
 {
-	from {top:0px;}
-	to {top:100%;}
-}
-/*@keyframes pic_leave
-{
-	from {top:-100%;}
+	from {top:100%;}
 	to {top:0px;}
+}
+@keyframes pic_leave
+{
+	from {top:0px;}
+	to {top:-100%;}
 }
 @-webkit-keyframes pic_leave 
 {
 	from {top:0px;}
 	to {top:-100%;}
-}*/
+}
 .circle1{
 	margin-bottom: 10px;
 	width: 12px;
@@ -56,10 +61,42 @@ div{
 	border-radius: 6px;
 	background-color: #6291b4;
 }
-#picture1 img,#picture2 img,#picture3 img,#picture4 img,#picture5 img,#picture6 img
-{
+#picture1{
+	position:absolute;
+	height: 100%;
 	width: 100%;
-	margin:0px;
+	background-color: black;
+	z-index: 1;
+}
+#picture2{
+	position:absolute;
+	height: 100%;
+	width: 100%;
+	background-color: orange;
+}
+#picture3{
+	position:absolute;
+	height: 100%;
+	width: 100%;
+	background-color: yellow;
+}
+#picture4{
+	position:absolute;
+	height: 100%;
+	width: 100%;
+	background-color: pink;
+}
+#picture5{
+	position:absolute;
+	height: 100%;
+	width: 100%;
+	background-color: blue;
+}
+#picture6{
+	position:absolute;
+	height: 100%;
+	width: 100%;
+	background-color: green;
 }
 .pic_show{
 	width: 100%;
@@ -70,9 +107,9 @@ div{
 	animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
 }
-/*.pic_leave{
+.pic_leave{
 	width: 100%;
 	margin:0px;
 	-webkit-animation: pic_leave 3s ease-in-out;
     animation: pic_leave 3s ease-in-out;
-}*/
+}
