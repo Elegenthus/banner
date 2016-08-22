@@ -16,8 +16,8 @@ var button = document.getElementById('side'),
 		picture[listNum].style.zIndex = "1";
 		picture[lastNum].style.zIndex = "auto";
 		if(lastNum<listNum){
-			picture[lastNum].className="pic_leave";
 			picture[listNum].className="pic_show";
+			picture[lastNum].className="pic_leave";
 		}
 		else if(lastNum>listNum){
 			picture[lastNum].className="pic_leave1";

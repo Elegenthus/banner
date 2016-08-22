@@ -1,3 +1,7 @@
+img{
+	width: 100%;
+
+}
 body
 {
 	margin:0px;
@@ -148,8 +152,8 @@ div{
 .pic_leave{
 	width: 100%;
 	margin:0px;
-	-webkit-animation: pic_leave 3s ease-in-out;
-    animation: pic_leave 3s ease-in-out;
+	-webkit-animation: pic_leave 1s ease-in-out;
+    animation: pic_leave 1s ease-in-out;
     animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
 }
