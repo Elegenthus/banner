@@ -1,0 +1,49 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-size: 50px;
+}
+.banner {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+}
+
+#container {
+    width: 100%;
+    transition: transform .5s;
+}
+.pic{
+	width: 100%;
+	text-align: center;
+}
+.pic1{
+	background: linear-gradient( to bottom, #0d2c49 0%, #6180a2 70%,#0d2c49 );
+}
+
+.circle{
+	margin-bottom: 10px;
+	width: 10px;
+	height: 10px;
+	border-radius: 6px;
+	border: 1px #6291b4 solid;
+	cursor: pointer;
+}
+
+#side{
+	position: fixed;
+	right: 40px;
+	top:50%;
+	margin-top: -40px;
+	z-index: 2;
+}
+
+.circle1{
+	margin-bottom: 10px;
+	width: 12px;
+	height: 12px;
+	border-radius: 6px;
+	background-color: #6291b4;
+}
