@@ -1,5 +1,5 @@
 var container = document.getElementById('container');
-var items = container.getElementsByTagName('div');
+var items = container.getElementsByClassName('pic');
 var side = document.getElementById("side")
 var dot = side.getElementsByTagName('div');
 var height = document.body.clientHeight;
@@ -29,19 +29,25 @@ function nextPage(e) {
     changeDotStyle(i);
 }
 
-for (let k = 0; k < dot.length; k++) {
+function changePageByDot(k){
     dot[k].addEventListener('click', function() {
         changeDotStyle(k);
         container.style.transform = "translateY(-" + k * height + "px)";
     })
 }
 
+for (var k = 0; k < dot.length; k++) {
+    changePageByDot(k);
+    
+}
+
 window.addEventListener('mousewheel', function(e) {
+        console.log("end")
     if (waiting) return;
     nextPage(e);
     waiting = true;
-    setTimeout(() => {
+    setTimeout(function(){
         waiting = false
         console.log("end")
-    }, 1500);
+    }, 1000);
 });
